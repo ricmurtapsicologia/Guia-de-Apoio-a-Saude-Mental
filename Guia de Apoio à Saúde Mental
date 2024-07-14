@@ -8,7 +8,7 @@
     <meta property="og:title" content="Psicologia e Terapia - Richelmy Murta">
     <meta property="og:description" content="Conecte-se com Richelmy Murta para uma jornada transformadora de autoconhecimento e bem-estar emocional. Descubra ferramentas e recursos essenciais em nossa plataforma online.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="file:///C:/Users/USUARIO/Desktop/Escala%20PRIORI-RIC/e1e77ca6-8a64-403c-ae54-7b8476a193b4.webp">
+   <meta property="og:image" content="https://seu-servidor.com/caminho-para-imagem/e1e77ca6-8a64-403c-ae54-7b8476a193b4.webp">
     <meta property="og:url" content="https://example.com/">
     <title>Guia de Apoio à Saúde Mental - Richelmy Murta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -127,7 +127,7 @@
     </style>
 </head>
 <body>
-    <header style="background: url('file:///C:/Users/USUARIO/Desktop/Escala%20PRIORI-RIC/e1e77ca6-8a64-403c-ae54-7b8476a193b4.webp') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+   <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
         <p class="statement">"Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"</p>
     </header>
