@@ -409,39 +409,75 @@
 <meta name="keywords" content="Richelmy Murta, terapia cognitivo-comportamental, gestão de estresse, melhoria da autoestima, vídeos de psicologia, bem-estar mental">
 <title>Vídeos de Psicologia - Richelmy Murta: Estratégias para Bem-Estar Mental</title>
 <style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.video {
+    width: 31.33%; /* Slightly less than one-third, accounting for margins */
+    margin-bottom: 20px;
+}
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+p {
+    text-align: center;
+    margin-top: 8px;
+}
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .video {
+        width: 48%; /* Adjust to fit two videos per row on medium screens */
+    }
+}
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        section {
-            padding: 20px;
-            margin: 0 auto;
-            width: 80%;
-            max-width: 1200px;
-        }
-        .videos-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .video {
-            width: 31.33%; /* Slightly less than one-third, accounting for margins */
-            margin-bottom: 20px;
-        }
-        iframe {
-            width: 100%;
-            height: 200px;
-            border: none;
-        }
-        p {
-            text-align: center;
-            margin-top: 8px;
-        }
+@media (max-width: 768px) {
+    .video {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px;
+    }
+    section {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+    .video {
+        width: 100%; /* Full width on very small screens */
+        margin-bottom: 15px;
+    }
+    iframe {
+        height: 180px; /* Adjust iframe height for very small screens */
+    }
+    p {
+        font-size: 14px; /* Adjust text size for very small screens */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -519,158 +555,213 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        header, footer {
-            background-color: #005a87;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #007ba7;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            font-size: 16px;
-            display: inline-block;
-            background-color: #005a87;
-            border: none;
-            box-shadow: 0 4px #003354;
-            transition: all 0.3s;
-        }
-        nav a:hover {
-            background-color: #003354;
-            box-shadow: 0 6px #002030;
-            transform: translateY(-2px);
-        }
-        nav a i {
-            margin-right: 8px;
-        }
-        section {
-            padding: 20px;
-            margin: 0 auto;
-            width: 80%;
-            max-width: 1000px;
-            line-height: 1.6;
-            font-size: 18px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #005a87;
-            text-align: center;
-        }
-        .statement {
-            color: #f4f4f4;
-            font-size: 18px;
-            background: rgba(0, 43, 54, 0.8);
-            padding: 8px 16px;
-            border-radius: 12px;
-            margin: 20px auto;
-            width: 60%;
-            text-align: center;
-        }
-        a.whatsapp-link, a.instagram-link {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            background-color: #25D366;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
-transition: background-color 0.3s;
-        }
-        a.instagram-link {
-            background-color: #E4405F;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background-color: #e9eff1;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: background-color 0.3s;
-        }
-        li:hover {
-            background-color: #d0e1e6;
-        }
-        .app-detail {
-            width: 75%;
-            padding-right: 20px;
-        }
-        .app-name {
-            font-size: 18px;
-            font-weight: bold;
-            color: #005a87;
-        }
-        .app-description {
-            font-size: 14px;
-            color: #666;
-            margin-top: 5px;
-        }
-        .button {
-            display: flex;
-            align-items: center;
-            background-color: #005a87;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #003354;
-        }
-        .button i {
-            margin-right: 8px;
-        }
-        .icon-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .icon-container i {
-            margin-bottom: 5px;
-            cursor: pointer;
-            color: #555;
-        }
-        .whatsapp-share {
-            color: #25D366;
-        }
-        .share {
-            color: #555;
-        }
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+header, footer {
+    background-color: #005a87;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background: #007ba7;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    background-color: #005a87;
+    border: none;
+    box-shadow: 0 4px #003354;
+    transition: all 0.3s;
+}
+nav a:hover {
+    background-color: #003354;
+    box-shadow: 0 6px #002030;
+    transform: translateY(-2px);
+}
+nav a i {
+    margin-right: 8px;
+}
+section {
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    color: #005a87;
+    text-align: center;
+}
+.statement {
+    color: #f4f4f4;
+    font-size: 18px;
+    background: rgba(0, 43, 54, 0.8);
+    padding: 8px 16px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+}
+a.whatsapp-link, a.instagram-link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+a.instagram-link {
+    background-color: #E4405F;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #e9eff1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+li:hover {
+    background-color: #d0e1e6;
+}
+.app-detail {
+    width: 75%;
+    padding-right: 20px;
+}
+.app-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #005a87;
+}
+.app-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #005a87;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #003354;
+}
+.button i {
+    margin-right: 8px;
+}
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon-container i {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #555;
+}
+.whatsapp-share {
+    color: #25D366;
+}
+.share {
+    color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .app-detail {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    .button {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    li {
+        padding: 15px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    li {
+        padding: 10px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -760,79 +851,133 @@ transition: background-color 0.3s;
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        section {
-            padding: 30px;
-            background: #fff;
-            margin: 30px auto;
-            max-width: 1200px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-        h2 {
-            font-size: 24px;
-            color: #005a87;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            background-color: #e9eff1;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
-        }
-        li:hover {
-            background-color: #ccd9ff;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        a, .button {
-            color: white;
-            background-color: #005a87;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, box-shadow 0.3s;
-            display: inline-block;
-            text-align: center;
-            width: 180px;
-        }
-        a:hover, .button:hover {
-            background-color: #003354;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-        }
-        .content {
-            display: none;
-            padding: 10px;
-            margin-top: 5px;
-            background-color: #f0f2f5;
-            border-radius: 5px;
-        }
-        i {
-            margin-right: 10px;
-            color: #005a87;
-        }
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+section {
+    padding: 30px;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+h2 {
+    font-size: 24px;
+    color: #005a87;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+li {
+    background-color: #e9eff1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+li:hover {
+    background-color: #ccd9ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+a, .button {
+    color: white;
+    background-color: #005a87;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+}
+a:hover, .button:hover {
+    background-color: #003354;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+}
+.content {
+    display: none;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+}
+i {
+    margin-right: 10px;
+    color: #005a87;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    a, .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    li {
+        padding: 15px;
+    }
+    a, .button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    li {
+        padding: 10px;
+    }
+    a, .button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -846,60 +991,119 @@ transition: background-color 0.3s;
     <title>Recursos Adicionais para Saúde Mental - Richelmy Murta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        section {
-            padding: 30px;
-            background: #fff;
-            margin: 30px auto;
-            max-width: 1200px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-        h2 {
-            font-size: 24px;
-            color: #005a87;
-            margin-bottom: 20px;
-        }
-        .resource-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #e9eff1;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 10px;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .resource-link {
-            color: white;
-            background-color: #005a87;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        .resource-link:hover {
-            background-color: #003354;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-        }
-        .resource-description {
-            flex: 1;
-            margin-right: 20px;
-        }
+       body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+section {
+    padding: 30px;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+h2 {
+    font-size: 24px;
+    color: #005a87;
+    margin-bottom: 20px;
+}
+.resource-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9eff1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.resource-link {
+    color: white;
+    background-color: #005a87;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.resource-link:hover {
+    background-color: #003354;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+}
+.resource-description {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    .resource-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .resource-description {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .resource-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .resource-item {
+        padding: 15px;
+    }
+    .resource-link {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .resource-item {
+        padding: 10px;
+    }
+    .resource-link {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -913,74 +1117,132 @@ transition: background-color 0.3s;
     <title>Recursos Adicionais para Saúde Mental - Richelmy Murta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        section {
-            padding: 30px;
-            background: #fff;
-            margin: 30px auto;
-            max-width: 1200px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-        h2 {
-            font-size: 24px;
-            color: #005a87;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            background-color: #e9eff1;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
-        }
-        li:hover {
-            background-color: #ccd9ff;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        .resource-description {
-            flex: 1;
-            margin-right: 20px;
-            text-align: justify;
-        }
-        a, .button {
-            color: white;
-            background-color: #005a87;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, box-shadow 0.3s;
-            display: inline-block;
-            text-align: center;
-            width: 180px;
-        }
-        a:hover, .button:hover {
-            background-color: #003354;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-        }
+       body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+section {
+    padding: 30px;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+h2 {
+    font-size: 24px;
+    color: #005a87;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+li {
+    background-color: #e9eff1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+li:hover {
+    background-color: #ccd9ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.resource-description {
+    flex: 1;
+    margin-right: 20px;
+    text-align: justify;
+}
+a, .button {
+    color: white;
+    background-color: #005a87;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+}
+a:hover, .button:hover {
+    background-color: #003354;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .resource-description {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    a, .button {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    li {
+        padding: 15px;
+    }
+    a, .button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    li {
+        padding: 10px;
+    }
+    a, .button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -995,72 +1257,138 @@ transition: background-color 0.3s;
     <title>Recursos Adicionais para Saúde Mental</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        section {
-            padding: 30px;
-            background: #fff;
-            margin: 30px auto;
-            max-width: 1200px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-        }
-        h2 {
-            font-size: 24px;
-            color: #005a87;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            width: 100%;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        li {
-            background-color: #e9eff1;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 10px;
-            width: 80%; /* Adjust width as needed */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-        }
-        .description {
-            flex: 1;
-            margin-right: 20px;
-            text-align: justify;
-            font-size: 16px; /* Adjust font size as needed */
-        }
-        a {
-            color: white;
-            background-color: #005a87;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, box-shadow 0.3s;
-            text-align: center;
-        }
-        a:hover {
-            background-color: #003354;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-        }
+       body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+section {
+    padding: 30px;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+h2 {
+    font-size: 24px;
+    color: #005a87;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li {
+    background-color: #e9eff1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 80%; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.description {
+    flex: 1;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 16px; /* Adjust font size as needed */
+}
+a {
+    color: white;
+    background-color: #005a87;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+a:hover {
+    background-color: #003354;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        width: 95%;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .description {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    a {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    li {
+        padding: 15px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    li {
+        padding: 10px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
     </style>
 </head>
 <body>
