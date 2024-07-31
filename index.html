@@ -66,13 +66,11 @@
             text-align: center;
         }
         .statement {
-            color: #f4f4f4;
+            color: #005a87;
             font-size: 18px;
-            background: rgba(0, 43, 54, 0.8);
             padding: 8px 16px;
-            border-radius: 12px;
             margin: 20px auto;
-            width: 60%;
+            width: 80%;
             text-align: center;
         }
         a.whatsapp-link, a.instagram-link {
@@ -180,11 +178,6 @@
                 width: 100%;
                 padding: 15px;
             }
-            .header-text {
-                font-size: 18px;
-                padding: 10px;
-                background: rgba(0, 43, 54, 0.7);
-            }
         }
         @media (max-width: 480px) {
             body {
@@ -217,19 +210,16 @@
                 width: 100%;
                 padding: 10px;
             }
-            .header-text {
-                font-size: 16px;
-                padding: 8px;
-                background: rgba(0, 43, 54, 0.7);
-            }
         }
     </style>
 </head>
 <body>
    <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
-        <p class="statement header-text">"Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"</p>
     </header>
+    <div class="statement">
+        "Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"
+    </div>
     <nav style="background: rgba(0, 60, 72, 0.95); display: flex; justify-content: space-around; padding: 12px; text-align: center;">
         <a href="#orientacoes" style="color: #adecee; padding: 8px 16px; text-decoration:none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-user-md"></i> Explorando a Terapia</a>
         <a href="#videos" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-video-camera"></i> Vídeos de Apoio</a>
@@ -240,7 +230,6 @@
     </nav>
 </body>
 </html>
-
 
 <section id="orientacoes">
     <h2>Explorando a Terapia</h2>
@@ -1502,6 +1491,7 @@ a:hover {
 <style>
     @media (max-width: 1024px) {
         .contact-links {
+            display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
@@ -1514,6 +1504,7 @@ a:hover {
 
     @media (max-width: 768px) {
         .contact-links {
+            display: flex;
             flex-direction: column;
             align-items: center;
             gap: 15px;
@@ -1533,6 +1524,7 @@ a:hover {
 
     @media (max-width: 480px) {
         .contact-links {
+            display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
