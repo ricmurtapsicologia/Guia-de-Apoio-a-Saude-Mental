@@ -8,7 +8,7 @@
     <meta property="og:title" content="Psicologia e Terapia - Richelmy Murta">
     <meta property="og:description" content="Conecte-se com Richelmy Murta para uma jornada transformadora de autoconhecimento e bem-estar emocional. Descubra ferramentas e recursos essenciais em nossa plataforma online.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="file:///https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png">
+    <meta property="og:image" content="https://seu-servidor.com/caminho-para-imagem/e1e77ca6-8a64-403c-ae54-7b8476a193b4.webp">
     <meta property="og:url" content="https://example.com/">
     <title>Guia de Apoio à Saúde Mental - Richelmy Murta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -66,11 +66,13 @@
             text-align: center;
         }
         .statement {
-            color: #005a87;
+            color: #f4f4f4;
             font-size: 18px;
+            background: rgba(0, 43, 54, 0.8);
             padding: 8px 16px;
+            border-radius: 12px;
             margin: 20px auto;
-            width: 80%;
+            width: 60%;
             text-align: center;
         }
         a.whatsapp-link, a.instagram-link {
@@ -99,8 +101,6 @@
             padding: 0;
         }
         li {
-            color: #005a87; /* Define a cor do texto como azul */
-            font-weight: bold; /* Deixa o texto em negrito */
             margin: 10px 0;
             padding: 15px;
             background: #fff;
@@ -112,103 +112,44 @@
         li.active, li:hover {
             background: #e0f7fa;
         }
-        .content p {
-            text-align: justify;
-            margin-bottom: 20px;
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 8px;
         }
         p {
             text-align: justify;
             margin: 0;
             padding: 0;
         }
-        .button {
-            color: white; /* Cor das letras dos botões */
-            background-color: #005a87;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, box-shadow 0.3s;
-            display: inline-block;
-            text-align: center;
-            width: 180px;
-        }
-        .button:hover {
-            background-color: #003354;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-        }
-        .therapy-list a {
-            color: #005a87; /* Cor das letras dos botões na seção "Explorando a Terapia" */
-            text-decoration: none;
-        }
-        .therapy-list a:hover {
-            text-decoration: underline;
-        }
-        /* Media Queries for Responsiveness */
+        /* Media Queries */
         @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            section {
-                padding: 20px;
-            }
-            ul {
-                padding: 0;
-            }
-            li {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 15px;
-            }
-            .button {
-                margin-top: 10px;
-                width: 100%;
-                text-align: center;
+            header {
+                height: auto;
+                padding: 10px;
             }
             nav {
-                display: flex;
                 flex-direction: column;
-                align-items: center;
             }
             nav a {
                 margin-bottom: 10px;
             }
-            .container {
-                width: 100%;
-                padding: 15px;
+            section {
+                width: 95%;
             }
         }
         @media (max-width: 480px) {
-            body {
-                padding: 10px;
+            header h1 {
+                font-size: 24px;
             }
-            section {
-                padding: 15px;
-            }
-            ul {
-                padding: 0;
-            }
-            li {
-                padding: 10px;
-            }
-            .button {
-                padding: 8px;
-                font-size: 14px;
-                width: 100%;
-                text-align: center;
-            }
-            nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .statement {
+                width: 90%;
+                font-size: 16px;
             }
             nav a {
-                margin-bottom: 8px;
-            }
-            .container {
-                width: 100%;
-                padding: 10px;
+                font-size: 14px;
             }
         }
     </style>
@@ -216,10 +157,8 @@
 <body>
    <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
+        <p class="statement">"Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"</p>
     </header>
-    <div class="statement">
-        "Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"
-    </div>
     <nav style="background: rgba(0, 60, 72, 0.95); display: flex; justify-content: space-around; padding: 12px; text-align: center;">
         <a href="#orientacoes" style="color: #adecee; padding: 8px 16px; text-decoration:none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-user-md"></i> Explorando a Terapia</a>
         <a href="#videos" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-video-camera"></i> Vídeos de Apoio</a>
@@ -228,42 +167,30 @@
         <a href="#faq" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-question-circle"></i> FAQ</a>
         <a href="#contato" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-envelope"></i> Contato e Redes</a>
     </nav>
-</body>
-</html>
 
-<section id="orientacoes">
-    <h2>Explorando a Terapia</h2>
-    <div class="container">
-        <ul>
-            <li onclick="toggleContent('gestao-estresse')">1. Gestão de Estresse e Ansiedade: Encontre Sua Calma.</li>
-            <style>
-    .content p {
-        margin-bottom: 20px; /* Adiciona 20 pixels de espaço abaixo de cada parágrafo */
-    }
-</style>
-<div id="gestao-estresse" class="content">
-                <p>Navegar pelo caos do cotidiano sem perder a calma pode parecer uma tarefa hercúlea, mas com as estratégias certas, você pode gerenciar eficazmente o estresse e a ansiedade. Este tópico oferece técnicas testadas que ajudam a restaurar a paz interior e manter a serenidade.</p>
-                <p>Comece com o poder da respiração: exercícios de respiração profunda, como a técnica de respiração quadrada ou a respiração diafragmática, são métodos rápidos e eficazes para acalmar uma mente agitada. Praticá-los regularmente pode ajudar a reduzir significativamente os níveis de estresse.</p>
-                <p>Incorporar atividade física na sua rotina é outro método comprovado para combater o estresse. Seja uma caminhada ao ar livre, uma sessão de yoga, ou até mesmo dançar na sua sala, mover-se regularmente libera endorfinas, melhorando seu humor e dissipando a tensão.</p>
-                <p>Práticas de mindfulness e meditação também são essenciais. Dedicar tempo para meditar ajuda a focar no presente e reduz a preocupação excessiva com o futuro. Essas práticas aumentam a consciência do corpo e da mente, fortalecendo sua capacidade de lidar com o estresse.</p>
-                <p>Além disso, a Terapia Cognitivo-Comportamental (TCC) oferece ferramentas valiosas para mudar padrões de pensamento negativos que contribuem para a ansiedade e o estresse. Aprender a desafiar esses pensamentos e substituí-los por outros mais realistas e positivos pode transformar sua maneira de reagir às adversidades.</p>
-                <p>Implemente essas técnicas e transforme sua abordagem ao estresse e ansiedade. Lembre-se, pequenos passos podem levar a grandes mudanças.</p>
-            </div>
+    <section id="orientacoes">
+        <h2>Explorando a Terapia</h2>
+        <div class="container">
+            <ul>
+                <li onclick="toggleContent('gestao-estresse')">1. Gestão de Estresse e Ansiedade: Encontre Sua Calma.</li>
+                <div id="gestao-estresse" class="content">
+                    <p>Navegar pelo caos do cotidiano sem perder a calma pode parecer uma tarefa hercúlea, mas com as estratégias certas, você pode gerenciar eficazmente o estresse e a ansiedade. Este tópico oferece técnicas testadas que ajudam a restaurar a paz interior e manter a serenidade.</p>
+                    <p>Comece com o poder da respiração: exercícios de respiração profunda, como a técnica de respiração quadrada ou a respiração diafragmática, são métodos rápidos e eficazes para acalmar uma mente agitada. Praticá-los regularmente pode ajudar a reduzir significativamente os níveis de estresse.</p>
+                    <p>Incorporar atividade física na sua rotina é outro método comprovado para combater o estresse. Seja uma caminhada ao ar livre, uma sessão de yoga, ou até mesmo dançar na sua sala, mover-se regularmente libera endorfinas, melhorando seu humor e dissipando a tensão.</p>
+                    <p>Práticas de mindfulness e meditação também são essenciais. Dedicar tempo para meditar ajuda a focar no presente e reduz a preocupação excessiva com o futuro. Essas práticas aumentam a consciência do corpo e da mente, fortalecendo sua capacidade de lidar com o estresse.</p>
+                    <p>Além disso, a Terapia Cognitivo-Comportamental (TCC) oferece ferramentas valiosas para mudar padrões de pensamento negativos que contribuem para a ansiedade e o estresse. Aprender a desafiar esses pensamentos e substituí-los por outros mais realistas e positivos pode transformar sua maneira de reagir às adversidades.</p>
+                    <p>Implemente essas técnicas e transforme sua abordagem ao estresse e ansiedade. Lembre-se, pequenos passos podem levar a grandes mudanças.</p>
+                </div>
 
-            <li onclick="toggleContent('depressao-superar')">2. Depressão: Caminhos para a Superar.</li>
-            <style>
-    .content p {
-        margin-bottom: 20px; /* Adiciona 20 pixels de espaço abaixo de cada parágrafo */
-    }
-</style>
-<div id="depressao-superar" class="content">
-                <p>A depressão é uma tempestade silenciosa que lentamente tinge de cinza os dias mais ensolarados. Entender seus sintomas é o primeiro passo para reivindicar sua vida e reencontrar a alegria perdida. Este tópico é um farol de esperança para quem luta contra a depressão, oferecendo estratégias eficazes para retomar o controle emocional.</p>
-                <p>A depressão manifesta-se de diversas formas, desde a perda de interesse nas atividades diárias até sentimentos persistentes de tristeza e vazio. No entanto, com as abordagens certas, é possível fazer mudanças significativas. A terapia cognitivo-comportamental tem se mostrado uma poderosa aliada no tratamento da depressão, ajudando a reformular pensamentos negativos e a adotar comportamentos mais saudáveis.</p>
-                <p>Integrar atividades que promovem bem-estar, como exercícios físicos regulares, pode ser extremamente benéfico. A prática de exercícios libera endorfinas, conhecidas como hormônios da felicidade, que podem aliviar os sintomas depressivos. Além disso, estabelecer uma rotina diária ajuda a criar um senso de estrutura, reduzindo a incerteza que pode alimentar a depressão.</p>
-                <p>A conexão social é vital; conversar com amigos, familiares ou grupos de apoio pode proporcionar o conforto necessário para enfrentar os dias difíceis. A partilha de experiências e sentimentos reduz o isolamento e fortalece as redes de apoio.</p>
-                <p>Por fim, a meditação e técnicas de mindfulness ensinam a viver o momento presente, uma habilidade crucial para quem lida com a depressão. Essas práticas ajudam a acalmar a mente e a reduzir o estresse, abrindo caminho para uma perspectiva mais positiva da vida.</p>
-                <p>Encarar a depressão é um desafio, mas com as ferramentas e o suporte adequados, é possível superá-la. Este é um convite para começar sua jornada de cura e redescobrir a alegria em cada dia.</p>
-            </div>
+                <li onclick="toggleContent('depressao-superar')">2. Depressão: Caminhos para a Superar.</li>
+                <div id="depressao-superar" class="content">
+                    <p>Entender a depressão é o primeiro passo para superá-la. Este tópico explora as várias facetas da depressão, desde os sintomas até as estratégias de enfrentamento. Descubra como a terapia, medicação, e mudanças no estilo de vida podem ser combinadas para proporcionar alívio e promover a recuperação.</p>
+                    <p>A terapia cognitivo-comportamental (TCC) é uma abordagem eficaz no tratamento da depressão. Ela ajuda a identificar e modificar padrões de pensamento negativos, ensinando técnicas de enfrentamento para lidar com situações difíceis. A TCC pode ser realizada individualmente ou em grupo, oferecendo suporte e motivação contínuos.</p>
+                    <p>Além da terapia, a medicação pode ser uma parte essencial do tratamento para muitas pessoas. Antidepressivos ajudam a equilibrar os neurotransmissores no cérebro, aliviando os sintomas da depressão. É importante seguir as orientações médicas e relatar quaisquer efeitos colaterais ao seu médico.</p>
+                    <p>Incorporar mudanças positivas no estilo de vida também desempenha um papel crucial na recuperação da depressão. Atividades físicas regulares, uma dieta equilibrada, e um sono de qualidade contribuem para o bem-estar mental e físico. Práticas de autocuidado, como a meditação e o mindfulness, também são benéficas.</p>
+                    <p>Construir uma rede de apoio é fundamental. Conectar-se com amigos, familiares, ou grupos de apoio pode proporcionar um sentimento de pertencimento e reduzir a sensação de isolamento. Compartilhar suas experiências e ouvir as de outras pessoas pode ser extremamente encorajador.</p>
+                    <p>Lembre-se, a recuperação da depressão é um processo contínuo e único para cada pessoa. É importante ser paciente consigo mesmo e celebrar pequenas vitórias ao longo do caminho.</p>
+                </div>
 
             <li onclick="toggleContent('autoestima-autocuidado')">3. Autoestima e Autocuidado: Reconstrua Seu Bem-Estar!</li>
             <style>
@@ -1488,62 +1415,300 @@ a:hover {
     <p class="small-text" style="font-size: 14px;">Contato: 35 98464-0729</p>
 </section>
 
-<style>
-    @media (max-width: 1024px) {
-        .contact-links {
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o Guia de Apoio à Saúde Mental com Richelmy Murta, especializado em Terapia Cognitivo-Comportamental. Acesse vídeos, ferramentas digitais e FAQs para um profundo autoconhecimento e bem-estar emocional.">
+    <meta name="keywords" content="Richelmy Murta, terapia cognitivo-comportamental, bem-estar mental, autoconhecimento, saúde mental, terapia online, perguntas frequentes, vídeos de psicologia">
+    <meta property="og:title" content="Psicologia e Terapia - Richelmy Murta">
+    <meta property="og:description" content="Conecte-se com Richelmy Murta para uma jornada transformadora de autoconhecimento e bem-estar emocional. Descubra ferramentas e recursos essenciais em nossa plataforma online.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="file:///https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png">
+    <meta property="og:url" content="https://example.com/">
+    <title>Guia de Apoio à Saúde Mental - Richelmy Murta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center;
+            background-size: cover;
+            height: 200px;
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
-            gap: 20px;
+            position: relative;
         }
-        .contact-links a {
-            width: 80%;
-            margin-bottom: 10px;
+        header h1 {
+            color: #f4f4f4;
+            font-size: 28px;
+            background: rgba(0, 43, 54, 0.8);
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin: 0;
+            position: absolute;
+            top: 10px;
         }
-    }
-
-    @media (max-width: 768px) {
-        .contact-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-        .contact-links a {
-            width: 100%;
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-        .contact-links a i {
+        .statement {
+            color: #005a87;
             font-size: 18px;
-        }
-        .contact-links a span {
-            margin-left: 8px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .contact-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-        .contact-links a {
-            padding: 8px 15px;
-            font-size: 12px;
+            padding: 8px 16px;
+            margin: 0 auto;
             width: 100%;
-            margin-bottom: 5px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            bottom: -20px;
         }
-        .contact-links a i {
+        nav {
+            background: rgba(0, 60, 72, 0.95);
+            display: flex;
+            justify-content: space-around;
+            padding: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #adecee;
+            padding: 8px 16px;
+            text-decoration: none;
             font-size: 16px;
+            display: inline-block;
+            background-color: #005a87;
+            border: none;
+            box-shadow: 0 4px #003354;
+            transition: all 0.3s;
+            border-radius: 8px;
         }
-        .contact-links a span {
-            margin-left: 5px;
+        nav a:hover {
+            background-color: #003354;
+            box-shadow: 0 6px #002030;
+            transform: translateY(-2px);
         }
-        .small-text {
-            font-size: 12px;
+        nav a i {
+            margin-right: 8px;
         }
-    }
-</style>
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1000px;
+            line-height: 1.6;
+            font-size: 18px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #005a87;
+            text-align: center;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+        a.whatsapp-link, a.instagram-link {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        a.instagram-link {
+            background-color: #E4405F;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            color: #005a87; /* Define a cor do texto como azul */
+            font-weight: bold; /* Deixa o texto em negrito */
+            margin: 10px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        li.active, li:hover {
+            background: #e0f7fa;
+        }
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+        }
+        .button {
+            color: white; /* Cor das letras dos botões */
+            background-color: #005a87;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            text-align: center;
+            width: 180px;
+        }
+        .button:hover {
+            background-color: #003354;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+        }
+        .therapy-list a {
+            color: #005a87; /* Cor das letras dos botões na seção "Explorando a Terapia" */
+            text-decoration: none;
+        }
+        .therapy-list a:hover {
+            text-decoration: underline;
+        }
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            section {
+                padding: 20px;
+            }
+            ul {
+                padding: 0;
+            }
+            li {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+            .button {
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin-bottom: 10px;
+            }
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+            .statement {
+                position: static;
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            section {
+                padding: 15px;
+            }
+            ul {
+                padding: 0;
+            }
+            li {
+                padding: 10px;
+            }
+            .button {
+                padding: 8px;
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin-bottom: 8px;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            .statement {
+                position: static;
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Guia de Apoio à Saúde Mental</h1>
+    </header>
+    <div class="statement">
+        "Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"
+    </div>
+    <nav>
+        <a href="#orientacoes" id="orientacoes-btn"><i class="fa fa-user-md"></i> Explorando a Terapia</a>
+        <a href="#videos" id="videos-btn"><i class="fa fa-video-camera"></i> Vídeos de Apoio</a>
+        <a href="#apps" id="apps-btn"><i class="fa fa-mobile"></i> Ferramentas Digitais</a>
+        <a href="#recursos" id="recursos-btn"><i class="fa fa-book"></i> Recursos Adicionais</a>
+        <a href="#faq" id="faq-btn"><i class="fa fa-question-circle"></i> FAQ</a>
+        <a href="#contato" id="contato-btn"><i class="fa fa-envelope"></i> Contato e Redes</a>
+    </nav>
+    <section id="orientacoes-content" class="content">
+        <h2>Explorando a Terapia</h2>
+        <p>Conteúdo sobre Explorando a Terapia.</p>
+    </section>
+    <section id="faq-content" class="content">
+        <h2>FAQ</h2>
+        <p>Conteúdo sobre FAQ.</p>
+    </section>
+    <script>
+        document.getElementById('orientacoes-btn').addEventListener('click', function() {
+            toggleContent('orientacoes-content');
+        });
+        document.getElementById('faq-btn').addEventListener('click', function() {
+            toggleContent('faq-content');
+        });
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var allContents = document.querySelectorAll('.content');
+            allContents.forEach(function(cont) {
+                if (cont !== content) {
+                    cont.style.display = 'none';
+                }
+            });
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
 
