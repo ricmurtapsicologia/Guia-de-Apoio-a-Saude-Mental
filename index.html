@@ -1467,11 +1467,9 @@ a:hover {
     }
 </script>
 
-
-
 </head>
 <body>
- <section id="contato" style="text-align: center; font-family: Arial, sans-serif; padding-top: 20px; padding-bottom: 20px;">
+<section id="contato" style="text-align: center; font-family: Arial, sans-serif; padding-top: 20px; padding-bottom: 20px;">
     <h2 style="margin-bottom: 20px;">
         <div class="image-container" style="display: inline-block; width: 50px; height: 50px; vertical-align: middle;">
             <img src="https://i.pinimg.com/564x/97/f2/8c/97f28c46101e40878b61cee63253e443.jpg" alt="Support Ribbon" style="width: 100%; height: auto;">
@@ -1490,3 +1488,50 @@ a:hover {
     <p class="small-text" style="margin-top: 20px; font-size: 14px;">© 2024 Richelmy Murta - Todos os direitos reservados</p>
     <p class="small-text" style="font-size: 14px;">Contato: 35 98464-0729</p>
 </section>
+
+<style>
+    @media (max-width: 1024px) {
+        .contact-links {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact-links a {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contact-links {
+            gap: 15px;
+        }
+        .contact-links a {
+            width: 100%;
+            font-size: 14px;
+        }
+        .contact-links a i {
+            font-size: 18px;
+        }
+        .contact-links a span {
+            margin-left: 8px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contact-links {
+            gap: 10px;
+        }
+        .contact-links a {
+            padding: 8px 15px;
+            font-size: 12px;
+        }
+        .contact-links a i {
+            font-size: 16px;
+        }
+        .contact-links a span {
+            margin-left: 5px;
+        }
+        .small-text {
+            font-size: 12px;
+        }
+    }
+</style>
