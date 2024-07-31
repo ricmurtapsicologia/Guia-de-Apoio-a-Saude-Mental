@@ -13,146 +13,50 @@
     <title>Guia de Apoio à Saúde Mental - Richelmy Murta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
+    @media (max-width: 768px) {
+        header {
+            height: auto;
+            padding: 10px;
         }
-        header, footer {
-            background-color: #005a87;
-            color: white;
-            padding: 20px;
+        header .statement {
+            width: 90%;
+            font-size: 16px;
+            background: rgba(0, 43, 54, 0.8);
+            color: #f4f4f4;
+            padding: 12px 24px;
+            border-radius: 12px;
             text-align: center;
+            margin: 20px auto;
         }
         nav {
-            background: #007ba7;
-            padding: 10px;
-            text-align: center;
+            flex-direction: column;
         }
         nav a {
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            font-size: 16px;
-            display: inline-block;
-            background-color: #005a87;
-            border: none;
-            box-shadow: 0 4px #003354;
-            transition: all 0.3s;
-        }
-        nav a:hover {
-            background-color: #003354;
-            box-shadow: 0 6px #002030;
-            transform: translateY(-2px);
-        }
-        nav a i {
-            margin-right: 8px;
+            margin-bottom: 10px;
         }
         section {
-            padding: 20px;
-            margin: 0 auto;
-            width: 80%;
-            max-width: 1000px;
-            line-height: 1.6;
-            font-size: 18px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 95%;
         }
-        h1, h2 {
-            color: #005a87;
-            text-align: center;
+    }
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 24px;
         }
-        .statement {
-            color: #f4f4f4;
-            font-size: 18px;
+        header .statement {
+            width: 90%;
+            font-size: 16px;
             background: rgba(0, 43, 54, 0.8);
-            padding: 8px 16px;
+            color: #f4f4f4;
+            padding: 12px 24px;
             border-radius: 12px;
-            margin: 20px auto;
-            width: 60%;
             text-align: center;
-        }
-        a.whatsapp-link, a.instagram-link {
-            display: block;
-            width: fit-content;
             margin: 20px auto;
-            background-color: #25D366;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
         }
-        a.instagram-link {
-            background-color: #E4405F;
+        nav a {
+            font-size: 14px;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-            padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        li.active, li:hover {
-            background: #e0f7fa;
-        }
-        .content {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background: #f4f4f4;
-            border-radius: 8px;
-        }
-        p {
-            text-align: justify;
-            margin: 0;
-            padding: 0;
-        }
-        /* Media Queries */
-        @media (max-width: 768px) {
-            header {
-                height: auto;
-                padding: 10px;
-            }
-            nav {
-                flex-direction: column;
-            }
-            nav a {
-                margin-bottom: 10px;
-            }
-            section {
-                width: 95%;
-            }
-        }
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 24px;
-            }
-            .statement {
-                width: 90%;
-                font-size: 16px;
-            }
-            nav a {
-                font-size: 14px;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
    <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
