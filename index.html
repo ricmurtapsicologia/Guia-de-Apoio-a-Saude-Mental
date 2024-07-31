@@ -39,6 +39,7 @@
         padding: 8px 16px;
         text-decoration: none;
         font-size: 16px;
+        display: inline-block;
         background-color: #005a87;
         border: none;
         box-shadow: 0 4px #003354;
@@ -63,7 +64,6 @@
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        text-align: justify;
     }
     h1, h2 {
         color: #005a87;
@@ -122,24 +122,13 @@
         padding: 10px;
         background: #f4f4f4;
         border-radius: 8px;
-        text-align: justify;
     }
     p {
         text-align: justify;
         margin: 0;
         padding: 0;
     }
-    header {
-        background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center;
-        background-size: cover;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 0;
-    }
+    /* Media Queries */
     @media (max-width: 768px) {
         header {
             height: auto;
@@ -158,8 +147,8 @@
             text-align: center;
             margin: 20px auto;
             position: relative;
-            top: auto;
-            transform: none;
+            top: 0;
+            transform: translateY(100%);
         }
         nav {
             flex-direction: column;
@@ -172,24 +161,11 @@
         }
     }
     @media (max-width: 480px) {
-        header {
-            height: auto;
-            padding: 10px;
-        }
         header h1 {
             font-size: 24px;
-            width: 90%;
-            background: rgba(0, 43, 54, 0.8);
-            padding: 12px 24px;
-            border-radius: 12px;
-            text-align: center;
-            margin: 20px auto;
-            position: relative;
-            top: auto;
-            transform: none;
         }
         .statement {
-            width: 100%;
+            width: 90%;
             font-size: 16px;
             background: rgba(0, 43, 54, 0.8);
             color: #f4f4f4;
@@ -198,14 +174,11 @@
             text-align: center;
             margin: 20px auto;
             position: relative;
-            top: auto;
-            transform: none;
+            top: 0;
+            transform: translateY(100%);
         }
         nav a {
             font-size: 14px;
-        }
-        a.whatsapp-link, a.instagram-link {
-            width: 90%;
         }
     }
 </style>
@@ -222,17 +195,17 @@
 </script>
 <body>
     <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
-    </header>
-    <div class="statement">"Conecte-se aqui e comece sua jornada transformadora de autoconhecimento e bem-estar"</div>
-    <nav style="background: rgba(0, 60, 72, 0.95); display: flex; justify-content: space-around; padding: 12px; text-align: center;">
-        <a href="#orientacoes" style="color: #adecee; padding: 8px 16px; text-decoration:none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-user-md"></i> Explorando a Terapia</a>
-        <a href="#videos" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-video-camera"></i> Vídeos de Apoio</a>
-        <a href="#apps" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-mobile"></i> Ferramentas Digitais</a>
-        <a href="#recursos" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-book"></i> Recursos Adicionais</a>
-        <a href="#faq" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-question-circle"></i> FAQ</a>
-        <a href="#contato" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-envelope"></i> Contato e Redes</a>
-    </nav>
+    <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
+</header>
+<div class="statement">"Conecte-se aqui e comece sua jornada transformadora de autoconhecimento e bem-estar"</div>
+<nav style="background: rgba(0, 60, 72, 0.95); display: flex; justify-content: center; padding: 12px; text-align: center; flex-wrap: wrap;">
+    <a href="#orientacoes" style="color: #adecee; padding: 8px 16px; text-decoration:none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-user-md"></i> Explorando a Terapia</a>
+    <a href="#videos" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-video-camera"></i> Vídeos de Apoio</a>
+    <a href="#apps" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-mobile"></i> Ferramentas Digitais</a>
+    <a href="#recursos" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-book"></i> Recursos Adicionais</a>
+    <a href="#faq" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-question-circle"></i> FAQ</a>
+    <a href="#contato" style="color: #adecee; padding: 8px 16px; text-decoration: none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-envelope"></i> Contato e Redes</a>
+</nav>
     <section id="orientacoes">
         <h2>Explorando a Terapia</h2>
         <div class="container">
