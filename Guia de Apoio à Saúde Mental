@@ -179,6 +179,16 @@
         }
     </style>
 </head>
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+</script>
 <body>
     <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
