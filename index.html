@@ -8,126 +8,217 @@
     <meta property="og:title" content="Psicologia e Terapia - Richelmy Murta">
     <meta property="og:description" content="Conecte-se com Richelmy Murta para uma jornada transformadora de autoconhecimento e bem-estar emocional. Descubra ferramentas e recursos essenciais em nossa plataforma online.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="file:///C:/Users/USUARIO/Desktop/Escala%20PRIORI-RIC/e1e77ca6-8a64-403c-ae54-7b8476a193b4.webp">
+    <meta property="og:image" content="file:///https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png">
     <meta property="og:url" content="https://example.com/">
     <title>Guia de Apoio à Saúde Mental - Richelmy Murta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
+ <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    header, footer {
+        background-color: #005a87;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background: #007ba7;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        background-color: #005a87;
+        border: none;
+        box-shadow: 0 4px #003354;
+        transition: all 0.3s;
+    }
+    nav a:hover {
+        background-color: #003354;
+        box-shadow: 0 6px #002030;
+        transform: translateY(-2px);
+    }
+    nav a i {
+        margin-right: 8px;
+    }
+    section {
+        padding: 20px;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 1000px;
+        line-height: 1.6;
+        font-size: 18px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+        color: #005a87;
+        text-align: center;
+    }
+    .statement {
+        color: #f4f4f4;
+        font-size: 18px;
+        background: rgba(0, 43, 54, 0.8);
+        padding: 8px 16px;
+        border-radius: 12px;
+        margin: 20px auto;
+        width: 60%;
+        text-align: center;
+    }
+    a.whatsapp-link, a.instagram-link {
+        display: block;
+        width: fit-content;
+        margin: 20px auto;
+        background-color: #25D366;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    a.instagram-link {
+        background-color: #E4405F;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        color: #005a87; /* Define a cor do texto como azul */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin: 10px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    }
+    li.active, li:hover {
+        background: #e0f7fa;
+    }
+    .content p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    p {
+        text-align: justify;
+        margin: 0;
+        padding: 0;
+    }
+    .button {
+        color: white; /* Cor das letras dos botões */
+        background-color: #005a87;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        transition: background-color 0.3s, box-shadow 0.3s;
+        display: inline-block;
+        text-align: center;
+        width: 180px;
+    }
+    .button:hover {
+        background-color: #003354;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+    }
+    .therapy-list a {
+        color: #005a87; /* Cor das letras dos botões na seção "Explorando a Terapia" */
+        text-decoration: none;
+    }
+    .therapy-list a:hover {
+        text-decoration: underline;
+    }
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #005a87;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #007ba7;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            font-size: 16px;
-            display: inline-block;
-            background-color: #005a87;
-            border: none;
-            box-shadow: 0 4px #003354;
-            transition: all 0.3s;
-        }
-        nav a:hover {
-            background-color: #003354;
-            box-shadow: 0 6px #002030;
-            transform: translateY(-2px);
-        }
-        nav a i {
-            margin-right: 8px;
+            padding: 15px;
         }
         section {
             padding: 20px;
-            margin: 0 auto;
-            width: 80%;
-            max-width: 1000px;
-            line-height: 1.6;
-            font-size: 18px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #005a87;
-            text-align: center;
-        }
-        .statement {
-            color: #f4f4f4;
-            font-size: 18px;
-            background: rgba(0, 43, 54, 0.8);
-            padding: 8px 16px;
-            border-radius: 12px;
-            margin: 20px auto;
-            width: 60%;
-            text-align: center;
-        }
-        a.whatsapp-link, a.instagram-link {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            background-color: #25D366;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
-        }
-        a.instagram-link {
-            background-color: #E4405F;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
         }
         ul {
-            list-style-type: none;
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            flex-direction: column;
+            align-items: flex-start;
             padding: 15px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: background 0.3s ease;
         }
-        li.active, li:hover {
-            background: #e0f7fa;
-        }
-        .content {
-            display: none;
+        .button {
             margin-top: 10px;
-            padding: 10px;
-            background: #f4f4f4;
-            border-radius: 8px;
+            width: 100%;
+            text-align: center;
         }
-        p {
-            text-align: justify;
-            margin: 0;
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav a {
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+    @media (max-width: 480px) {
+        body {
+            padding: 10px;
+        }
+        section {
+            padding: 15px;
+        }
+        ul {
             padding: 0;
         }
-    </style>
+        li {
+            padding: 10px;
+        }
+        .button {
+            padding: 8px;
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav a {
+            margin-bottom: 8px;
+        }
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+</style>
+
+
 </head>
 <body>
-    <header style="background: url('file:///C:/Users/USUARIO/Desktop/Escala%20PRIORI-RIC/e1e77ca6-8a64-403c-ae54-7b8476a193b4.webp') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+   <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
         <p class="statement">"Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"</p>
     </header>
@@ -434,18 +525,86 @@
             margin: 0;
             padding: 20px;
         }
-        #apps {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        header, footer {
+            background-color: #005a87;
+            color: white;
+            padding: 20px;
             text-align: center;
-            width: 100%; /* Set width to match the header width */
+        }
+        nav {
+            background: #007ba7;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            background-color: #005a87;
+            border: none;
+            box-shadow: 0 4px #003354;
+            transition: all 0.3s;
+        }
+        nav a:hover {
+            background-color: #003354;
+            box-shadow: 0 6px #002030;
+            transform: translateY(-2px);
+        }
+        nav a i {
+            margin-right: 8px;
+        }
+        section {
+            padding: 20px;
             margin: 0 auto;
+            width: 80%;
+            max-width: 1000px;
+            line-height: 1.6;
+            font-size: 18px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #005a87;
+            text-align: center;
+        }
+        .statement {
+            color: #f4f4f4;
+            font-size: 18px;
+            background: rgba(0, 43, 54, 0.8);
+            padding: 8px 16px;
+            border-radius: 12px;
+            margin: 20px auto;
+            width: 60%;
+            text-align: center;
+        }
+        a.whatsapp-link, a.instagram-link {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+transition: background-color 0.3s;
+        }
+        a.instagram-link {
+            background-color: #E4405F;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
         }
         ul {
             list-style-type: none;
             padding: 0;
-            width: 100%;
         }
         li {
             background-color: #e9eff1;
@@ -455,8 +614,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 90%; /* Adjusted to match the header width */
+            width: 100%;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+        li:hover {
+            background-color: #d0e1e6;
         }
         .app-detail {
             width: 75%;
@@ -908,7 +1071,7 @@
                 <div class="description">
                     Explore práticas de mindfulness que podem ajudar a reduzir o estresse e aumentar a consciência sobre o momento presente. Estas técnicas são essenciais para quem busca melhorar a saúde mental e o bem-estar geral.
                 </div>
-                <a href="https://assertivamindfulness.com.br/blog/">Visitar</a>
+                <a href="https://www.napratica.org.br/mindfulness-como-aplicar/" target="_blank">Visitar</a>
             </li>
             <li>
                 <div class="description">
@@ -921,49 +1084,62 @@
 </body>
 </html>
 
-    <section id="faq">
-        <h2>FAQ - Terapia e Saúde Mental</h2>
-        <ul>
-            <li class="button" onclick="toggleContent('preciso-terapia')">
-                <i class="fas fa-question-circle"></i> Necessidade de Terapia
-                <div id="preciso-terapia" class="content">
-                    <p>Você pode considerar terapia se estiver enfrentando sentimentos de angústia ou ansiedade que são difíceis de gerenciar sozinho, problemas de relacionamento, tristeza persistente, ou outros desafios emocionais que afetam sua qualidade de vida.</p>
-                </div>
-            </li>
-            <li class="button" onclick="toggleContent('tipos-terapia')">
-                <i class="fas fa-brain"></i> Tipos de Terapia
-                <div id="tipos-terapia" class="content">
-                    <p>Diversas abordagens terapêuticas estão disponíveis, incluindo Terapia Cognitivo-Comportamental, psicodinâmica, terapia de grupo, e mindfulness, adequadas às necessidades individuais de cada pessoa.</p>
-                </div>
-            </li>
-            <li class="button" onclick="toggleContent('duracao-terapia')">
-                <i class="fas fa-clock"></i> Duração da Terapia
-                <div id="duracao-terapia" class="content">
-                    <p>A duração da terapia varia conforme as necessidades individuais. Pode ser de curta duração, para problemas específicos, ou de longa duração, para questões mais complexas.</p>
-                </div>
-            </li>
-            <li class="button" onclick="toggleContent('beneficios-terapia')">
-                <i class="fas fa-heart"></i> Benefícios da Terapia
-                <div id="beneficios-terapia" the content">
-                    <p>A terapia oferece uma ampla gama de benefícios, incluindo melhor comunicação e relações interpessoais, estratégias para lidar com o estresse e a ansiedade, e um espaço seguro para explorar pensamentos e emoções.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <script>
-        function toggleContent(id) {
-            var content = document.getElementById(id);
-            var allContents = document.querySelectorAll('.content');
-            allContents.forEach(function(cont) {
-                if(cont !== content) {
-                    cont.style.display = 'none';
-                }
-            });
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
-</body>
-</html>
+<section id="faq">
+    <h2>FAQ - Terapia e Saúde Mental</h2>
+    <ul>
+        <li onclick="toggleContent('preciso-terapia')">
+            <div class="button-container">
+                <i class="fas fa-question-circle"></i>
+                <span>Necessidade de Terapia</span>
+            </div>
+            <div id="preciso-terapia" class="content">
+                <p>Você pode considerar terapia se estiver enfrentando sentimentos de angústia ou ansiedade que são difíceis de gerenciar sozinho, problemas de relacionamento, tristeza persistente, ou outros desafios emocionais que afetam sua qualidade de vida.</p>
+            </div>
+        </li>
+        <li onclick="toggleContent('tipos-terapia')">
+            <div class="button-container">
+                <i class="fas fa-brain"></i>
+                <span>Tipos de Terapia</span>
+            </div>
+            <div id="tipos-terapia" class="content">
+                <p>Diversas abordagens terapêuticas estão disponíveis, incluindo Terapia Cognitivo-Comportamental, psicodinâmica, terapia de grupo, e mindfulness, adequadas às necessidades individuais de cada pessoa.</p>
+            </div>
+        </li>
+        <li onclick="toggleContent('duracao-terapia')">
+            <div class="button-container">
+                <i class="fas fa-clock"></i>
+                <span>Duração da Terapia</span>
+            </div>
+            <div id="duracao-terapia" class="content">
+                <p>A duração da terapia varia conforme as necessidades individuais. Pode ser de curta duração, para problemas específicos, ou de longa duração, para questões mais complexas.</p>
+            </div>
+        </li>
+        <li onclick="toggleContent('beneficios-terapia')">
+            <div class="button-container">
+                <i class="fas fa-heart"></i>
+                <span>Benefícios da Terapia</span>
+            </div>
+            <div id="beneficios-terapia" class="content">
+                <p>A terapia oferece uma ampla gama de benefícios, incluindo melhor comunicação e relações interpessoais, estratégias para lidar com o estresse e a ansiedade, e um espaço seguro para explorar pensamentos e emoções.</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        var allContents = document.querySelectorAll('.content');
+        allContents.forEach(function(cont) {
+            if (cont !== content) {
+                cont.style.display = 'none';
+            }
+        });
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+
 
 </head>
 <body>
