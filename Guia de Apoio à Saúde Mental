@@ -6,7 +6,7 @@
     <meta name="description" content="Explore o Guia de Apoio à Saúde Mental com Richelmy Murta, especializado em Terapia Cognitivo-Comportamental. Acesse vídeos, ferramentas digitais e FAQs para um profundo autoconhecimento e bem-estar emocional.">
     <meta name="keywords" content="Richelmy Murta, terapia cognitivo-comportamental, bem-estar mental, autoconhecimento, saúde mental, terapia online, perguntas frequentes, vídeos de psicologia">
     <meta property="og:title" content="Psicologia e Terapia - Richelmy Murta">
-    <meta property="og:description" content="Conecte-se com Richelmy Murta para uma jornada transformadora de autoconhecimento e bem-estar emocional. Descubra ferramentas e recursos essenciais em nossa plataforma online.">
+    <meta property="og:description" content="Conecte-se aqui e comece sua jornada transformadora de autoconhecimento e bem-estar. Descubra ferramentas e recursos essenciais em nossa plataforma online.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://seu-servidor.com/caminho-para-imagem/e1e77ca6-8a64-403c-ae54-7b8476a193b4.webp">
     <meta property="og:url" content="https://example.com/">
@@ -157,7 +157,7 @@
 <body>
    <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
-        <p class="statement">"Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"</p>
+        <p class="statement">"Conecte-se aqui e comece sua jornada transformadora de autoconhecimento e bem-estar"</p>
     </header>
     <nav style="background: rgba(0, 60, 72, 0.95); display: flex; justify-content: space-around; padding: 12px; text-align: center;">
         <a href="#orientacoes" style="color: #adecee; padding: 8px 16px; text-decoration:none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-user-md"></i> Explorando a Terapia</a>
@@ -1402,7 +1402,7 @@ a:hover {
         </div>
         Você não está só!
     </h2>
-    <p>Se está passando por momentos difíceis ou buscando compreensão e apoio, estou aqui para te escutar e te orientar.</p>
+    <p>Se está passando por momentos difíceis ou buscando compreensão e apoio, conecte-se aqui para obter a ajuda e orientação que você precisa.</p>
     <div class="contact-links" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px;">
         <a href="https://www.instagram.com/ricmurtapsicologia/" class="instagram" style="background-color: #E1306C; color: white; text-decoration: none; padding: 10px 30px; border-radius: 5px; margin: 0; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15); font-size: 16px; white-space: nowrap; display: flex; align-items: center; justify-content: center; transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.3)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.boxShadow='5px 5px 20px rgba(0, 0, 0, 0.15)'; this.style.transform='translateY(0)';">
             <i class="fab fa-instagram" style="font-size: 20px;"></i><span style="margin-left: 10px;">Conecte-se no Instagram</span>
