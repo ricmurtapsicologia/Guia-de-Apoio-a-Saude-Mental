@@ -1477,7 +1477,7 @@ a:hover {
         Você não está só!
     </h2>
     <p>Se está passando por momentos difíceis ou buscando compreensão e apoio, estou aqui para te escutar e te orientar.</p>
-    <div class="contact-links" style="display: flex; justify-content: center; gap: 30px; margin-top: 20px; margin-bottom: 20px;">
+    <div class="contact-links" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px;">
         <a href="https://www.instagram.com/ricmurtapsicologia/" class="instagram" style="background-color: #E1306C; color: white; text-decoration: none; padding: 10px 30px; border-radius: 5px; margin: 0; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15); font-size: 16px; white-space: nowrap; display: flex; align-items: center; justify-content: center; transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.3)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.boxShadow='5px 5px 20px rgba(0, 0, 0, 0.15)'; this.style.transform='translateY(0)';">
             <i class="fab fa-instagram" style="font-size: 20px;"></i><span style="margin-left: 10px;">Conecte-se no Instagram</span>
         </a>
@@ -1497,6 +1497,7 @@ a:hover {
         }
         .contact-links a {
             width: 80%;
+            margin-bottom: 10px;
         }
     }
 
@@ -1507,6 +1508,7 @@ a:hover {
         .contact-links a {
             width: 100%;
             font-size: 14px;
+            margin-bottom: 8px;
         }
         .contact-links a i {
             font-size: 18px;
@@ -1523,6 +1525,8 @@ a:hover {
         .contact-links a {
             padding: 8px 15px;
             font-size: 12px;
+            width: 100%;
+            margin-bottom: 5px;
         }
         .contact-links a i {
             font-size: 16px;
@@ -1535,3 +1539,4 @@ a:hover {
         }
     }
 </style>
+
