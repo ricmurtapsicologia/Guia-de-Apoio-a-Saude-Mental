@@ -12,215 +12,223 @@
     <meta property="og:url" content="https://example.com/">
     <title>Guia de Apoio à Saúde Mental - Richelmy Murta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- <style>
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f0f2f5;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-    header, footer {
-        background-color: #005a87;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
-    nav {
-        background: #007ba7;
-        padding: 10px;
-        text-align: center;
-    }
-    nav a {
-        color: white;
-        padding: 8px 16px;
-        text-decoration: none;
-        font-size: 16px;
-        display: inline-block;
-        background-color: #005a87;
-        border: none;
-        box-shadow: 0 4px #003354;
-        transition: all 0.3s;
-    }
-    nav a:hover {
-        background-color: #003354;
-        box-shadow: 0 6px #002030;
-        transform: translateY(-2px);
-    }
-    nav a i {
-        margin-right: 8px;
-    }
-    section {
-        padding: 20px;
-        margin: 0 auto;
-        width: 80%;
-        max-width: 1000px;
-        line-height: 1.6;
-        font-size: 18px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-        color: #005a87;
-        text-align: center;
-    }
-    .statement {
-        color: #f4f4f4;
-        font-size: 18px;
-        background: rgba(0, 43, 54, 0.8);
-        padding: 8px 16px;
-        border-radius: 12px;
-        margin: 20px auto;
-        width: 60%;
-        text-align: center;
-    }
-    a.whatsapp-link, a.instagram-link {
-        display: block;
-        width: fit-content;
-        margin: 20px auto;
-        background-color: #25D366;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 20px;
-        border-radius: 5px;
-    }
-    a.instagram-link {
-        background-color: #E4405F;
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-        padding: 20px;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        color: #005a87; /* Define a cor do texto como azul */
-    font-weight: bold; /* Deixa o texto em negrito */
-    margin: 10px 0;
-    padding: 15px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: background 0.3s ease;
-    }
-    li.active, li:hover {
-        background: #e0f7fa;
-    }
-    .content p {
-        text-align: justify;
-        margin-bottom: 20px;
-    }
-    p {
-        text-align: justify;
-        margin: 0;
-        padding: 0;
-    }
-    .button {
-        color: white; /* Cor das letras dos botões */
-        background-color: #005a87;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-size: 16px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-        transition: background-color 0.3s, box-shadow 0.3s;
-        display: inline-block;
-        text-align: center;
-        width: 180px;
-    }
-    .button:hover {
-        background-color: #003354;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-    }
-    .therapy-list a {
-        color: #005a87; /* Cor das letras dos botões na seção "Explorando a Terapia" */
-        text-decoration: none;
-    }
-    .therapy-list a:hover {
-        text-decoration: underline;
-    }
-    /* Media Queries for Responsiveness */
-    @media (max-width: 768px) {
+    <style>
         body {
-            padding: 15px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #005a87;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #007ba7;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            background-color: #005a87;
+            border: none;
+            box-shadow: 0 4px #003354;
+            transition: all 0.3s;
+        }
+        nav a:hover {
+            background-color: #003354;
+            box-shadow: 0 6px #002030;
+            transform: translateY(-2px);
+        }
+        nav a i {
+            margin-right: 8px;
         }
         section {
             padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1000px;
+            line-height: 1.6;
+            font-size: 18px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #005a87;
+            text-align: center;
+        }
+        .statement {
+            color: #f4f4f4;
+            font-size: 18px;
+            background: rgba(0, 43, 54, 0.8);
+            padding: 8px 16px;
+            border-radius: 12px;
+            margin: 20px auto;
+            width: 60%;
+            text-align: center;
+        }
+        a.whatsapp-link, a.instagram-link {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        a.instagram-link {
+            background-color: #E4405F;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
         }
         ul {
+            list-style-type: none;
             padding: 0;
         }
         li {
-            flex-direction: column;
-            align-items: flex-start;
+            color: #005a87; /* Define a cor do texto como azul */
+            font-weight: bold; /* Deixa o texto em negrito */
+            margin: 10px 0;
             padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
-        .button {
-            margin-top: 10px;
-            width: 100%;
-            text-align: center;
+        li.active, li:hover {
+            background: #e0f7fa;
         }
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
         }
-        nav a {
-            margin-bottom: 10px;
-        }
-        .container {
-            width: 100%;
-            padding: 15px;
-        }
-    }
-    @media (max-width: 480px) {
-        body {
-            padding: 10px;
-        }
-        section {
-            padding: 15px;
-        }
-        ul {
+        p {
+            text-align: justify;
+            margin: 0;
             padding: 0;
         }
-        li {
-            padding: 10px;
-        }
         .button {
-            padding: 8px;
-            font-size: 14px;
-            width: 100%;
+            color: white; /* Cor das letras dos botões */
+            background-color: #005a87;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            display: inline-block;
             text-align: center;
+            width: 180px;
         }
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .button:hover {
+            background-color: #003354;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.45);
         }
-        nav a {
-            margin-bottom: 8px;
+        .therapy-list a {
+            color: #005a87; /* Cor das letras dos botões na seção "Explorando a Terapia" */
+            text-decoration: none;
         }
-        .container {
-            width: 100%;
-            padding: 10px;
+        .therapy-list a:hover {
+            text-decoration: underline;
         }
-    }
-</style>
-
-
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            section {
+                padding: 20px;
+            }
+            ul {
+                padding: 0;
+            }
+            li {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+            .button {
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin-bottom: 10px;
+            }
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+            .header-text {
+                font-size: 18px;
+                padding: 10px;
+                background: rgba(0, 43, 54, 0.7);
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            section {
+                padding: 15px;
+            }
+            ul {
+                padding: 0;
+            }
+            li {
+                padding: 10px;
+            }
+            .button {
+                padding: 8px;
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin-bottom: 8px;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            .header-text {
+                font-size: 16px;
+                padding: 8px;
+                background: rgba(0, 43, 54, 0.7);
+            }
+        }
+    </style>
 </head>
 <body>
    <header style="background: url('https://i.pinimg.com/originals/e0/21/f7/e021f7f32fab30da673940e4340c6865.png') no-repeat center center; background-size: cover; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h1 style="color: #f4f4f4; font-size: 28px; background: rgba(0, 43, 54, 0.8); padding: 12px 24px; border-radius: 12px; font-weight: bold;">Guia de Apoio à Saúde Mental</h1>
-        <p class="statement">"Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"</p>
+        <p class="statement header-text">"Conecte-se comigo para uma jornada de autoconhecimento e bem-estar"</p>
     </header>
     <nav style="background: rgba(0, 60, 72, 0.95); display: flex; justify-content: space-around; padding: 12px; text-align: center;">
         <a href="#orientacoes" style="color: #adecee; padding: 8px 16px; text-decoration:none; font-size: 16px; border-radius: 8px; transition: background-color 0.3s;"><i class="fa fa-user-md"></i> Explorando a Terapia</a>
@@ -232,6 +240,7 @@
     </nav>
 </body>
 </html>
+
 
 <section id="orientacoes">
     <h2>Explorando a Terapia</h2>
@@ -1455,6 +1464,7 @@ a:hover {
 </section>
 
 <script>
+   <script>
     function toggleContent(id) {
         var content = document.getElementById(id);
         var allContents = document.querySelectorAll('.content');
@@ -1493,6 +1503,7 @@ a:hover {
     @media (max-width: 1024px) {
         .contact-links {
             flex-direction: column;
+            align-items: center;
             gap: 20px;
         }
         .contact-links a {
@@ -1503,6 +1514,8 @@ a:hover {
 
     @media (max-width: 768px) {
         .contact-links {
+            flex-direction: column;
+            align-items: center;
             gap: 15px;
         }
         .contact-links a {
@@ -1520,6 +1533,8 @@ a:hover {
 
     @media (max-width: 480px) {
         .contact-links {
+            flex-direction: column;
+            align-items: center;
             gap: 10px;
         }
         .contact-links a {
