@@ -265,17 +265,19 @@
 		}
 		
 		/* LISTAS: FERRAMENTAS DIGITAIS, RECURSOS E FAQ */
+		/* => Ajustes para texto justificado, botões centralizados e layout simétrico */
 		.tools-list,
-		.resources-list,
-		.faq-list {
+		.resources-list {
 		  display: grid;
 		  gap: 20px;
-		}
-		.tools-list {
-		  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		  margin: 0 auto;
 		}
 		.tools-list li,
 		.resources-list li {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center; /* Para centralizar botões e títulos */
 		  background: #f9f9f9;
 		  padding: 15px;
 		  border-radius: 10px;
@@ -287,46 +289,26 @@
 		  transform: translateY(-3px);
 		  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 		}
-		.app-detail {
-		  font-size: 1.1rem;
-		  font-weight: 700;
-		  color: #00796b;
+		/* Títulos (app-detail, resource-card h3) centralizados */
+		.app-detail,
+		.resource-card h3 {
+		  text-align: center;
 		  margin-bottom: 8px;
+		  color: #00796b;
+		  font-weight: 700;
 		}
-		.app-description {
-		  font-size: 0.95rem;
+		/* Descrições com texto justificado */
+		.app-description,
+		.resource-card p {
+		  text-align: justify;
 		  color: #666;
 		  margin-bottom: 10px;
+		  font-size: 0.95rem;
 		}
-		.button {
-		  display: inline-block;
-		  padding: 12px 30px;
-		  background-color: #00796b;
-		  color: #fff;
-		  border-radius: 5px;
-		  font-size: 1rem;
-		  font-weight: 600;
-		  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-		  transition: background-color 0.3s, transform 0.3s;
-		}
-		.button:hover {
-		  background-color: #004d40;
-		  transform: translateY(-2px);
-		}
-		.icon-container {
-		  display: flex;
-		  justify-content: center;
-		  gap: 10px;
-		  margin-top: 10px;
-		}
-		.icon-container i {
-		  font-size: 1.2rem;
-		  color: #00796b;
-		  cursor: pointer;
-		  transition: color 0.3s;
-		}
-		.icon-container i:hover {
-		  color: #004d40;
+		/* Botões centralizados */
+		.tools-list li .button,
+		.resources-list li .button {
+		  margin: 0 auto; /* Centraliza o botão horizontalmente */
 		}
 		
 		/* FAQ */
@@ -504,6 +486,7 @@
 		    height: 250px;
 		  }
 		}
+	</style>
 	</style>
 </head>
 
