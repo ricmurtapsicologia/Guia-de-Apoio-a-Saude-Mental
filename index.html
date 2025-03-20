@@ -48,7 +48,7 @@
 		ul {
 		  list-style: none;
 		}
-		    
+		
 		/* PÁGINA DE Abertura (Splash) */
 		.welcome-page {
 		  position: fixed;
@@ -105,7 +105,7 @@
 		.splash-benefits li:hover {
 		  background: rgba(255,255,255,0.25);
 		}
-		    
+		
 		.cta-button {
 		  background-color: #FF9800; /* Cor vibrante e contrastante */
 		  padding: 15px 30px;
@@ -127,7 +127,6 @@
 		  100% { transform: scale(1); }
 		}
 		
-		    
 		/* CABEÇALHO */
 		.main-header {
 		  text-align: center;
@@ -151,7 +150,7 @@
 		  text-align: center;
 		  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 		}
-		    
+		
 		/* NAVEGAÇÃO */
 		.main-nav {
 		  background: rgba(0,60,72,0.95);
@@ -181,7 +180,7 @@
 		  background-color: #004d40;
 		  transform: scale(1.05);
 		}
-		    
+		
 		/* SEÇÕES GERAIS */
 		.content-section {
 		  padding: 30px;
@@ -201,7 +200,7 @@
 		  font-size: 1.8rem;
 		  color: #004d40;
 		}
-		    
+		
 		/* GRID CONTAINER & CARDS */
 		.grid-container {
 		  display: grid;
@@ -243,7 +242,7 @@
 		  color: #007BFF;
 		  text-decoration: underline;
 		}
-		    
+		
 		/* CONTEÚDO EXPANSÍVEL */
 		.content {
 		  display: none;
@@ -264,7 +263,7 @@
 		  color: #00796b;
 		  cursor: pointer;
 		}
-		    
+		
 		/* LISTAS: FERRAMENTAS DIGITAIS, RECURSOS E FAQ */
 		.tools-list,
 		.resources-list,
@@ -329,7 +328,7 @@
 		.icon-container i:hover {
 		  color: #004d40;
 		}
-		    
+		
 		/* FAQ */
 		.faq-list {
 		  grid-template-columns: repeat(2, 1fr);
@@ -356,7 +355,7 @@
 		.button-container i {
 		  margin-right: 8px;
 		}
-		    
+		
 		/* VÍDEOS */
 		.videos-container {
 		  display: grid;
@@ -383,7 +382,7 @@
 		  border: none;
 		  border-radius: 10px 10px 0 0;
 		}
-		    
+		
 		/* Rodapé / Contato */
 		.footer-section {
 		  background-color: #fff; /* Fundo claro */
@@ -456,7 +455,7 @@
 		.footer-bottom p {
 		  margin: 5px 0;
 		}
-		    
+		
 		/* RESPONSIVIDADE */
 		@media (max-width: 1024px) {
 		  .grid-container,
@@ -467,15 +466,36 @@
 		    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		  }
 		}
+		
+		/* Para telas menores que 768px, esconder o nav superior e exibir o mobile nav fixo */
 		@media (max-width: 768px) {
-		  .main-nav ul {
-		    flex-direction: column;
-		    width: 100%;         /* Garante que ocupe toda a largura */
-		    align-items: center; /* Centraliza os itens */
+		  /* Esconde o nav fixo do topo */
+		  .main-nav {
+		    display: none;
 		  }
-		  .main-nav li {
-		    margin: 5px 0;       /* Espaço vertical entre os itens */
+		  
+		  /* Novo Mobile Nav fixo na parte inferior */
+		  .mobile-nav {
+		    display: flex;
+		    position: fixed;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    background: rgba(0, 60, 72, 0.95);
+		    justify-content: space-around;
+		    align-items: center;
+		    padding: 10px 0;
+		    z-index: 1000;
 		  }
+		  .mobile-nav a {
+		    color: #fff;
+		    font-size: 0.9rem;
+		    text-align: center;
+		    padding: 5px;
+		    text-decoration: none;
+		  }
+		
+		  /* Ajusta os grids para uma coluna única */
 		  .grid-container,
 		  .videos-container {
 		    grid-template-columns: 1fr;
@@ -484,7 +504,6 @@
 		    height: 250px;
 		  }
 		}
-		
 	</style>
 </head>
 
