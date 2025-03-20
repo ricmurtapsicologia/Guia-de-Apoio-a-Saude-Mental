@@ -107,7 +107,7 @@
 		}
 		    
 		.cta-button {
-		  background-color: #004d40;
+		  background-color: #FF9800; /* Cor vibrante e contrastante */
 		  padding: 15px 30px;
 		  font-size: 1.1rem;
 		  color: #fff;
@@ -118,7 +118,7 @@
 		  animation: pulse 2s infinite;
 		}
 		.cta-button:hover {
-		  background-color: #00332e;
+		  background-color: #E68900; /* Versão mais escura para o hover */
 		  transform: translateY(-2px);
 		}
 		@keyframes pulse {
@@ -126,6 +126,7 @@
 		  50% { transform: scale(1.03); }
 		  100% { transform: scale(1); }
 		}
+		
 		    
 		/* CABEÇALHO */
 		.main-header {
@@ -469,6 +470,11 @@
 		@media (max-width: 768px) {
 		  .main-nav ul {
 		    flex-direction: column;
+		    width: 100%;         /* Garante que ocupe toda a largura */
+		    align-items: center; /* Centraliza os itens */
+		  }
+		  .main-nav li {
+		    margin: 5px 0;       /* Espaço vertical entre os itens */
 		  }
 		  .grid-container,
 		  .videos-container {
@@ -478,6 +484,7 @@
 		    height: 250px;
 		  }
 		}
+		
 	</style>
 </head>
 
