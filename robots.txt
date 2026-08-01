@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ricmurtapsicologia.github.io/Guia-de-Apoio-a-Saude-Mental/sitemap.xml
