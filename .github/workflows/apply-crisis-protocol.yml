@@ -1,0 +1,63 @@
+name: Harmonize crisis protocol
+
+on:
+  push:
+    branches:
+      - release/crisis-protocol-2026-09-07
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/crisis-protocol-2026-09-07
+      - name: Apply Ministry of Health crisis protocol
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          new='''<section class="crisis" id="apoio-imediato" aria-labelledby="apoio-titulo"><div class="crisis-card"><div><h2 id="apoio-titulo">Precisa de apoio imediato?</h2><p>Se houver risco imediato de se ferir, tentativa de suicídio, ameaça iminente à vida ou impossibilidade de permanecer em segurança, não fique sozinho(a) e procure atendimento de urgência.</p><p><strong>Urgência:</strong> ligue para o SAMU 192 ou vá a uma UPA 24h, pronto-socorro ou hospital. Para apoio emocional e conversa sigilosa, o CVV atende gratuitamente pelo 188 e pelo chat.</p><p class="micro">Referência: <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao/suicidio-prevencao" target="_blank" rel="noopener noreferrer">Ministério da Saúde — prevenção do suicídio</a>.</p></div><div class="crisis-actions"><a class="btn" href="tel:192" aria-label="Ligar para o SAMU no número 192"><i class="fa-solid fa-truck-medical" aria-hidden="true"></i>SAMU 192</a><a class="btn" href="tel:188" aria-label="Ligar para o CVV no número 188"><i class="fa-solid fa-phone" aria-hidden="true"></i>CVV 188</a><a class="btn" href="https://www.cvv.org.br/chat/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-comments" aria-hidden="true"></i>Chat do CVV</a></div></div></section>'''
+          s,count=re.subn(r'<section class="crisis" id="apoio-imediato".*?</section>',new,s,count=1,flags=re.S)
+          if count!=1:
+              raise SystemExit(f'bloco de crise: esperado 1, encontrado {count}')
+          s=s.replace('tel:+55188','tel:188')
+          p.write_text(s,encoding='utf-8')
+          Path('.github/workflows/apply-crisis-protocol.yml').unlink()
+          PY
+      - name: Validate protocol
+        run: |
+          grep -Fq 'href="tel:192"' index.html
+          grep -Fq 'href="tel:188"' index.html
+          grep -Fq 'UPA 24h' index.html
+          grep -Fq 'pronto-socorro' index.html
+          grep -Fq 'hospital' index.html
+          grep -Fq 'apoio emocional' index.html
+          ! grep -Fq 'tel:+55188' index.html
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class C(HTMLParser):
+              def __init__(self): super().__init__(); self.ids=[]
+              def handle_starttag(self,tag,attrs):
+                  for k,v in attrs:
+                      if k=='id' and v: self.ids.append(v)
+          c=C(); c.feed(Path('index.html').read_text(encoding='utf-8'))
+          dup={x for x in c.ids if c.ids.count(x)>1}
+          if dup: raise SystemExit('IDs duplicados: '+repr(dup))
+          print('Guia: protocolo de crise OK')
+          PY
+      - name: Commit harmonized guide
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'fix: harmonizar protocolo de crise com RPD e Ministério da Saúde'
+          git push origin HEAD:release/crisis-protocol-2026-09-07
